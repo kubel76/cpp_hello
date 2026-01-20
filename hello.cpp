@@ -1,18 +1,16 @@
 #include<iostream>
-#include<string>
+using namespace std;
 
 int main() {
-    int age = 25;
-    double height = 1.72;
-    char gender = 'M';
-    bool isStudent = true;
-    std::string name = "Peter";
-
-    std::cout << "Name: " << name << std::endl;
-    std::cout << "Age: " << age << std::endl;
-    std::cout << "Height: " << height << " meters" << std::endl;
-    std::cout << "Gender: " << gender << std::endl;
-    std::cout << "Is Student: " << isStudent << std::endl;
-
+    int number;
+    cout << "Введіть ціле число: ";
+    cin >> number;
+    if (number > 0) {
+        cout << "Число є додатнім." << endl;
+    } else if (number < 0) {
+        cout << "Число є від'ємним." << endl;
+    } else {
+        cout << "Число дорівнює нулю." << endl;
+    }
     return 0;
 }
